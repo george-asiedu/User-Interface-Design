@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { SubmitService } from '../submit.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ import { Validators } from '@angular/forms';
     <div class="grid-container">
       <div class="bg-img"></div>
       <div class="form-group">
-        <form [formGroup]="applyLogin" class="form">
+        <form [formGroup]="applyLogin" (submit)="loginForm()" class="form">
           <h2 class="heading">Login</h2>
 
           <div class="inputs">
@@ -37,8 +38,16 @@ import { Validators } from '@angular/forms';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  submitService = inject(SubmitService)
   applyLogin = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl('')
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required)
   })
+
+  loginForm() {
+    this.submitService.loginForm(
+      this.applyLogin.value.email ?? '',
+      this.applyLogin.value.password ?? ''
+    )
+  }
 }
