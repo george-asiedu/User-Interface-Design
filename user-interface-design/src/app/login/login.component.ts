@@ -17,7 +17,7 @@ import { SubmitService } from '../submit.service';
 
           <div class="inputs">
             <label for="email">E-mail</label>
-            <input type="email" formControlName="email" id="email" placeholder="email">
+            <input type="email" formControlName="email" id="email" placeholder="Email">
           </div>
 
           <div class="inputs">
@@ -25,7 +25,7 @@ import { SubmitService } from '../submit.service';
             <input type="password" formControlName="password" id="password" placeholder="*********">
           </div>
 
-          <button type="submit">Login</button>
+          <button type="submit" class="btn-primary">Login</button>
 
           <p class="text">
             Already have an account? 
