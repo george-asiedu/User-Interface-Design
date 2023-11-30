@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { SubmitService } from '../submit.service';
 
 @Component({
   selector: 'app-register',
@@ -11,7 +12,7 @@ import { Validators } from '@angular/forms';
       <div class="bg-img"></div>
 
       <div class="form-group">
-        <form [formGroup]="newAccountForm" class="form">
+        <form [formGroup]="newAccountForm" (submit)="submitForm()" class="form">
           <h2 class="heading">Create Account</h2>
 
           <div class="inputs">
@@ -46,9 +47,19 @@ import { Validators } from '@angular/forms';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+  submitService = inject(SubmitService)
+
   newAccountForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required)
   })
+
+  submitForm() {
+    this.submitService.submitForm(
+      this.newAccountForm.value.name ?? '',
+      this.newAccountForm.value.email ?? '',
+      this.newAccountForm.value.password ?? ''
+    )
+  }
 }
