@@ -1,0 +1,4 @@
+.bg-img {
+    height: 100vh;
+    background: var(--bg-color);
+}
