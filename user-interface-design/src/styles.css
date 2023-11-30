@@ -8,6 +8,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 :root {
     --bg-color: #0267FF;
     --header: #1D2939;
