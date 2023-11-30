@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { SubmitService } from '../submit.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   template: `
     <div class="grid-container">
       <div class="bg-img"></div>
@@ -22,7 +23,7 @@ import { SubmitService } from '../submit.service';
 
           <div class="inputs">
             <label for="email">E-mail</label>
-            <input type="email" formControlName="email" id="name" placeholder="johndoe@gmail.com">
+            <input type="email" formControlName="email" id="email" placeholder="johndoe@gmail.com">
           </div>
 
           <div class="inputs">
@@ -38,7 +39,7 @@ import { SubmitService } from '../submit.service';
           </div>
           <p class="text">
             Already have an account?
-            <a href="">Login</a>
+            <a routerLink="login">Login</a>
           </p>
         </form>
       </div>
