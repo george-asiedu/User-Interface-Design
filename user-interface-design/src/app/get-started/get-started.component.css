@@ -4,3 +4,97 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.started-box {
+    width: 400px;
+    height: auto;
+    margin: 1rem auto 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    padding: 1rem 6%;
+}
+.started-box .heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.started-box p {
+    text-align: center;
+    color: #808080;
+    font-weight: .9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    width: 80%;
+}
+
+.interest-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.box {
+    width: 150px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.3rem;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: .5rem;
+    padding: .9rem 1.2rem;
+}
+
+.box h5 {
+    color: #1D2939;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.box .add {
+    display: flex;
+    align-items: center;
+    border: 1px solid #A6A6A6;
+    padding: .1rem;
+    cursor: pointer;
+}
+
+.add .add-btn {
+    border: none;
+    background-color: inherit;
+    padding: 0rem .4rem;
+}
+
+.gaming {
+    background: #fad5fc;
+}
+
+.fashion {
+    background: #defdde;
+}
+
+.music {
+    background: #ffddc7;
+}
+
+.reading {
+    background: #e0edfb;
+}
+
+.block .add-btn {
+    background: inherit;
+    padding: .2rem .6rem;
+    border: 1px solid #A6A6A6;
+    outline: none;
+    cursor: pointer;
+}
