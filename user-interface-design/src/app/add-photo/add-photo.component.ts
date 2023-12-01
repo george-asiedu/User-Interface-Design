@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
             <p>Back</p>
           </div>
           <span>
-            <b>step 2</b> of 4
+            <b>Step 2</b> of 4
           </span>
           <p class="exit">Exit</p>
         </div>
