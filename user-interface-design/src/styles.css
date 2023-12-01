@@ -122,24 +122,6 @@ img {
     font-weight: 700;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 6% 7% 2%; 
-}
-
-.back {
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-    cursor: pointer;
-}
-
-.back:hover {
-    color: #0267FF;
-}
-
 .btn,
 .skip-btn {
     display: block;

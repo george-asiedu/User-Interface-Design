@@ -19,11 +19,6 @@
     margin: 5px 0px 1rem;
 }
 
-.exit:hover {
-    cursor: pointer;
-    font-weight: 700;
-}
-
 .add-img {
     width: 6rem;
     height: 6rem;

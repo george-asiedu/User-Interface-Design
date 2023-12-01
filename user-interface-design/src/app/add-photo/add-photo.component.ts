@@ -1,24 +1,15 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-add-photo',
   standalone: true,
-  imports: [],
+  imports: [HeaderComponent],
   template: `
     <div class="grid-container">
       <div class="bg-img"></div>
       <div class="photo-container">
-        <div class="header">
-          <div class="back">
-            <img src="assets/Left.svg" alt="back-arrow-image">
-            <p>Back</p>
-          </div>
-          <span>
-            <b>Step 2</b> of 4
-          </span>
-          <p class="exit">Exit</p>
-        </div>
-
+        <app-header></app-header>
         <div class="add-image-box">
           <h2 class="heading">Add Photo</h2>
           <p class="photo-text">Add a photo so other members know who you are</p>
