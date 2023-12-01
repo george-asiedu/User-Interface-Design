@@ -25,7 +25,7 @@ import { Component } from '@angular/core';
           <div class="add-img">
             <img src="assets/person.svg" alt="person-icon">
           </div>
-          <button type="button" class="btn-primary">Upload a photo</button>
+          <button type="button" class="btn">Upload a photo</button>
           <button type="button" class="skip-btn">Skip</button>
         </div>
       </div>

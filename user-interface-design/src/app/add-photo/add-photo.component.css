@@ -4,3 +4,31 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.add-image-box {
+    width: 400px;
+    height: auto;
+    padding: 1rem 1.6rem;
+    margin: 2rem auto 0rem;
+}
+
+.photo-text {
+    text-align: center;
+    color: #808080;
+    line-height: 1.5;
+    margin: 5px 0px 1rem;
+}
+
+.add-img {
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #808080;
+    margin: 0rem auto 7rem;
+}
+
+.add-img img {
+    width: 5rem;
+    margin: auto;
+}
