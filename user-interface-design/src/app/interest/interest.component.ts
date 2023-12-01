@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <p>
-      interest works!
-    </p>
+    <div class="grid-container">
+      <div class="bg-img"></div>
+    </div>
   `,
   styleUrl: './interest.component.css'
 })
