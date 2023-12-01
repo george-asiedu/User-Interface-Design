@@ -14,8 +14,8 @@ import { HeaderComponent } from '../header/header.component';
           <h2 class="heading">Hey there! What brings you here?</h2>
           <p class="interest-text">This will help us make great recommendations.</p>
           <div class="select-box">
-            <div class="select">
-              <img src="assets/add.svg" alt="add-ico">
+            <div class="select active">
+              <img src="assets/add-white.svg" alt="add-ico">
               <p>Social interaction</p>
             </div>
 
