@@ -35,6 +35,9 @@ img {
 .bg-img {
     height: 100vh;
     background: var(--bg-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .form-group {

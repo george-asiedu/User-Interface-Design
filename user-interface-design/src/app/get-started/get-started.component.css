@@ -1,8 +1,5 @@
 .bg-img {
     background-image: url('../../assets/male.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .started-box {

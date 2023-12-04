@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { AddPhotoComponent } from './add-photo/add-photo.component';
 import { InterestComponent } from './interest/interest.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { CompleteComponent } from './complete/complete.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,10 @@ export const routes: Routes = [
         path: 'interest-2',
         title: 'Interest Page',
         component: GetStartedComponent
+    },
+    {
+        path: 'interest-3',
+        title: 'Interest Page',
+        component: CompleteComponent
     }
 ];

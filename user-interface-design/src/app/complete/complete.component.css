@@ -1,0 +1,18 @@
+.bg-img {
+    background-image: url('../../assets/wooh.png');
+}
+
+.complete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 8% 20% 5%;
+}
+
+.complete-container p {
+    color: #808080;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 500;
+}
