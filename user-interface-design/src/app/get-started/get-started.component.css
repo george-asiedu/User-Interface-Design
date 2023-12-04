@@ -8,7 +8,7 @@
 .started-box {
     width: 400px;
     height: auto;
-    margin: 1rem auto 0rem;
+    margin: 0rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,12 +39,12 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .box {
     width: 150px;
-    height: 110px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
